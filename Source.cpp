@@ -97,5 +97,18 @@ int main() {
 } 
 // выводит бОльшее из двух чисел
 
+int main() {
+  int fi, se, th;
+  cin >> fi >> se >> th;
+  if ((fi >= se) && (fi >= th)) {
+      cout << fi;
+  } else if ((se >= fi) && (se >= th)) {
+      cout << se;
+  } else {
+      cout << th;
+  }
+  return 0;
+}
+// определяет наибольшее из трех
 
 
