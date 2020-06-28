@@ -69,3 +69,33 @@ int main() {
 	// проверка числа на палиндром
     return 0;
 }
+
+
+///////////// условный оператор////////
+
+int main() {
+	int a;
+	cin >> a;
+	if (a > 0) {
+	    cout << a;
+	} else {
+	    cout << -a;
+	}
+}
+
+int main() {
+  int fi, se;
+  cin >> fi >> se;
+  if (fi > se) {
+      cout << fi;
+  } else if (se > fi) {
+      cout << se;
+  } else {
+      cout << se;
+  }
+  return 0;
+} 
+// выводит бОльшее из двух чисел
+
+
+
