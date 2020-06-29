@@ -203,6 +203,77 @@ int main() {
 
 
 
+int main() {
+  int n,m,x,y;
+  cin >> n >> m >> x >> y;
+  if (m > n) {
+      if ((n-x)<x) {
+          if ((m-y) < y) {
+              if ((n-x) < (m-y)) {
+                  cout << (n-x);
+              } else {
+                  cout << (m-y); 
+              }
+          } else {
+              if ((n-x) < y) {
+                  cout << (n-x);
+              } else {
+                  cout << y; 
+              } 
+          }          
+      } else {
+          if ((m-y) < y) {
+              if (x < (m-y)) {
+                  cout << x;
+              } else {
+                  cout << (m-y); 
+              }
+          } else {
+              if (x < y) {
+                  cout << x;
+              } else {
+                  cout << y; 
+              } 
+          }     
+      }    
+  } else {
+            if ((m-x)<x) {
+          if ((n-y) < y) {
+              if ((m-x) < (n-y)) {
+                  cout << (m-x);
+              } else {
+                  cout << (n-y); 
+              }
+          } else {
+              if ((m-x) < y) {
+                  cout << (m-x);
+              } else {
+                  cout << y; 
+              } 
+          }          
+      } else {
+          if ((n-y) < y) {
+              if (x < (n-y)) {
+                  cout << x;
+              } else {
+                  cout << (n-y); 
+              }
+          } else {
+              if (x < y) {
+                  cout << x;
+              } else {
+                  cout << y; 
+              } 
+          }     
+      }   
+  }   
+  return 0;
+} // плавал в бассейне размером N×M метров и устал. В этот момент он обнаружил, 
+//что находится на расстоянии X метров от одного из длинных бортиков (не обязательно от ближайшего) 
+//и Y метров от одного из коротких бортиков. Какое минимальное расстояние должен проплыть Яша, чтобы выбраться из бассейна на бортик?
+
+
+
 
 
 
