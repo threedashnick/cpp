@@ -303,6 +303,81 @@ int main() {
 
 
 
+int main() {
+  int a1,b1,c1,a2,b2,c2;
+  int min1,min2,max1,max2,mid1,mid2;
+  cin >> a1 >> b1 >> c1 >> a2 >> b2 >> c2;
+    
+ // поиск минимальной стороны 1ой коробки
+    if ((a1<b1)&&(a1<c1)) {
+        min1 = a1;    
+    } else if ((b1<a1)&&(b1<c1)) {
+        min1 = b1;
+    } else {
+        min1 = c1;
+    } 
+    
+ // поиск минимальной стороны 2ой коробки
+    if ((a2<b2)&&(a2<c2)) {
+        min2 = a1;    
+    } else if ((b2<a2)&&(b2<c2)) {
+        min2 = b2;
+    } else {
+        min2 = c2;
+    } 
+
+ // поиск максимальной стороны 1ой коробки
+    if ((a1>b1)&&(a1>c1)) {
+        max1 = a1;    
+    } else if ((b1>a1)&&(b1>c1)) {
+        max1 = b1;
+    } else {
+        max1 = c1;
+    } 
+    
+ // поиск максимальной стороны 2ой коробки
+    if ((a2>b2)&&(a2>c2)) {
+        max2 = a2;    
+    } else if ((b2>a2)&&(b2>c2)) {
+        max2 = b2;
+    } else {
+        max2 = c2;
+    } 
+    
+  // поиск средней стороны 1ой коробки
+    if ( ((a1>b1)&&(a1<c1)) || ((a1<b1)&&(a1>c1)) ) {
+        mid1 = a1;    
+    } else if ( ((b1>a1)&&(b1<c1)) || ((b1<a1)&&(b1>c1)) ) {
+        mid1 = b1;
+    } else {
+        mid1 = c1;
+    } 
+    
+ // поиск средней стороны 2ой коробки
+    if ( ((a2>b2)&&(a2<c2)) || ((a2<b2)&&(a2>c2)) ) {
+        mid2 = a2;    
+    } else if ( ((b2>a2)&&(b2<c2)) || ((b2<a2)&&(b2>c2)) ) {
+        mid2 = b2;
+    } else {
+        mid2 = c2;
+    }  
+    
+  if ((min1==min2)&&(mid1==mid2)&&(max1==max2)) {
+      cout << "Boxes are equal";
+  } else if ((min1<min2)||(mid1<mid2)||(max1<max2)) { 
+      cout << "The first box is smaller than the second one";
+  } else if ((min1>min2)||(mid1>mid2)||(max1>max2)) { 
+      cout << "The first box is larger than the second one";
+  } else {
+      cout << "Boxes are incomparable";
+  }
+      
+  return 0;
+}
+
+
+
+
 
 
 
