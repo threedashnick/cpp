@@ -319,7 +319,7 @@ int main() {
     
  // поиск минимальной стороны 2ой коробки
     if ((a2<b2)&&(a2<c2)) {
-        min2 = a1;    
+        min2 = a2;    
     } else if ((b2<a2)&&(b2<c2)) {
         min2 = b2;
     } else {
@@ -362,15 +362,16 @@ int main() {
         mid2 = c2;
     }  
     
-  if ((min1==min2)&&(mid1==mid2)&&(max1==max2)) {
-      cout << "Boxes are equal";
-  } else if ((min1<min2)||(mid1<mid2)||(max1<max2)) { 
-      cout << "The first box is smaller than the second one";
-  } else if ((min1>min2)||(mid1>mid2)||(max1>max2)) { 
-      cout << "The first box is larger than the second one";
-  } else {
-      cout << "Boxes are incomparable";
-  }
+	
+    if ((min1==min2)&&(mid1==mid2)&&(max1==max2)) {
+        cout << "Boxes are equal";
+    } else if ((min1<=min2)&&(mid1<=mid2)&&(max1<=max2)) { 
+        cout << "The first box is smaller than the second one";
+    } else if ((min1>=min2)&&(mid1>=mid2)&&(max1>=max2)) { 
+        cout << "The first box is larger than the second one";
+    } else {
+        cout << "Boxes are incomparable";
+    }
       
   return 0;
 }
