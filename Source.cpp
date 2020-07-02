@@ -383,7 +383,7 @@ int main() {
 int main() {
   int value, i = 1;
   cin >> value;
-  while (i*i < value) {
+  while (i*i <= value) {
       cout << i*i << " ";
       i = i + 1;
   }       
