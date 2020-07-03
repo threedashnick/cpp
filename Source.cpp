@@ -458,9 +458,10 @@ int main() {
 // как выше но,: Определите сумму всех элементов последовательности, завершающейся числом 0.
 
 int main() {
-  int in ,max = 1;
+  int in ,max;
   cin >> in;
-  while (in > 0){
+  max = in;
+  while (in != 0){
       cin >> in;
       if ( in > max){
           max = in;
